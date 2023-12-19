@@ -1,0 +1,23 @@
+:root{
+    --color-primary:#285dd6;
+}
+
+@keyframes loading {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .spinner {
+    margin-left: 11rem;
+    margin-top: 3rem;
+    border: 20px dotted var(--color-primary);
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    animation: loading 2s infinite linear;
+  }
